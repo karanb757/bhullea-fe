@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import { heading, display, sans } from "@/lib/fonts";
+import { cinzel } from "@/lib/fonts";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -22,11 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${heading.variable} ${display.variable} ${sans.variable}`}
-    >
-      <body className="bg-cream font-sans text-ink antialiased">
+    <html lang="en" className={cinzel.variable}>
+      <body className="bg-cream font-cinzel text-ink antialiased">
         {children}
       </body>
     </html>

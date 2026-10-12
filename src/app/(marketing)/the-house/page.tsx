@@ -14,21 +14,20 @@ export default function TheHousePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex min-h-[70vh] items-end overflow-hidden bg-charcoal text-cream">
+      <section className="relative flex min-h-[110vh] items-center overflow-hidden bg-charcoal text-cream">
         <Image
-          src="/images/house/hero.png"
+          src="/images/house/story.png"
           alt="Grand Indian palace at golden hour"
           fill
           priority
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/70" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 pt-40 lg:px-10">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 lg:px-10">
           <Reveal>
-            <p className="font-display text-xs uppercase tracking-widest text-gold">
+            <span className="font-medium text-xs bg-black uppercase tracking-widest text-gold">
               A timeless vision. A brighter tomorrow.
-            </p>
+            </span>
             <h1 className="mt-3 font-heading text-5xl leading-tight md:text-7xl lg:text-8xl">
               THE HOUSE
               <br />

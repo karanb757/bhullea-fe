@@ -1,21 +1,8 @@
-import { Cinzel, EB_Garamond, Inter } from "next/font/google";
+import { Cinzel } from "next/font/google";
 
-export const heading = Cinzel({
+export const cinzel = Cinzel({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-cinzel",
-  display: "swap",
-});
-
-export const display = EB_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-garamond",
-  display: "swap",
-});
-
-export const sans = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
   display: "swap",
 });

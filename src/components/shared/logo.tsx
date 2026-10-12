@@ -13,7 +13,7 @@ export function Crest({ className }: { className?: string }) {
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <Link href="/" aria-label="BHULLEA home" className={cn("font-heading text-xl font-medium tracking-[0.12em] text-cream", className)}>
+    <Link href="/" aria-label="BHULLEA home" className={cn("font-heading mb-2 text-4xl font-medium tracking-[0.08em] text-white", className)}>
       BHULLEA
     </Link>
   );

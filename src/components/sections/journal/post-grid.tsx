@@ -11,18 +11,22 @@ export function PostGrid({ posts }: { posts: PostCardData[] }) {
 
   const filtered = active === ALL ? posts : posts.filter((p) => p.category === active);
 
+  // Split posts: first 2 in large, rest in small
+  const firstRowPosts = filtered.slice(0, 2);
+  const remainingPosts = filtered.slice(2);
+
   return (
-    <div>
-      {/* Category filter */}
-      <div className="flex flex-wrap gap-3 border-b border-charcoal/10 pb-6">
+    <div className="w-full">
+      {/* Category filter tabs */}
+      <div className="flex flex-wrap gap-4 border-b border-charcoal/10 pb-8 mb-12">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setActive(cat)}
-            className={`font-display text-xs uppercase tracking-widest transition ${
+            className={`font-display text-xs uppercase tracking-widest transition-colors duration-200 pb-2 ${
               active === cat
-                ? "text-charcoal underline underline-offset-4 decoration-gold"
-                : "text-charcoal/50 hover:text-charcoal"
+                ? "text-charcoal border-b-2 border-gold"
+                : "text-charcoal/50 hover:text-charcoal border-b-2 border-transparent"
             }`}
           >
             {cat}
@@ -30,12 +34,21 @@ export function PostGrid({ posts }: { posts: PostCardData[] }) {
         ))}
       </div>
 
-      {/* Grid */}
-      <div className="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((post) => (
-          <PostCard key={post.slug} post={post} />
+      {/* First Row - 2 large cards */}
+      <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 mb-12">
+        {firstRowPosts.map((post) => (
+          <PostCard key={post.slug} post={post} size="large" />
         ))}
       </div>
+
+      {/* Remaining Rows - 3 smaller cards per row */}
+      {remainingPosts.length > 0 && (
+        <div className="grid gap-x-6 gap-y-10 md:grid-cols-3">
+          {remainingPosts.map((post) => (
+            <PostCard key={post.slug} post={post} size="small" />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

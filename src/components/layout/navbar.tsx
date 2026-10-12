@@ -21,13 +21,13 @@ export function Navbar() {
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
           ? "bg-charcoal/80 py-3 shadow-lg backdrop-blur-md"
-          : "bg-gradient-to-b from-black/40 to-transparent py-5",
+          : "bg-linear-to-b from-black/40 to-transparent py-5",
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
+      <div className="flex items-center justify-between px-20">
         <Logo />
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
+        <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">
           {navLinks.map((link) => (
             <Link
               key={link.href}
