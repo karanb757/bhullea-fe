@@ -1,0 +1,11 @@
+@theme inline {
+  --color-cream: #f6f2ea;
+  --color-charcoal: #14110f;
+  --color-ink: #1c1a17;
+  --color-gold: #d4a964;
+  --color-gold-dark: #b98a45;
+
+  --font-heading: var(--font-cinzel), "Times New Roman", serif;
+  --font-display: var(--font-garamond), "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
