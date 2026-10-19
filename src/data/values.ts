@@ -1,9 +1,7 @@
-import { Droplet, Flower2, Lightbulb, ShieldCheck, Leaf, type LucideIcon } from "lucide-react";
-
-export const values: { label: string; icon: LucideIcon }[] = [
-  { label: "Purity", icon: Droplet },
-  { label: "Craftsmanship", icon: Flower2 },
-  { label: "Innovation", icon: Lightbulb },
-  { label: "Legacy", icon: ShieldCheck },
-  { label: "Responsibility", icon: Leaf },
+export const values = [
+  { label: "Purity", icon: "/icons/lotus-flower.png" },
+  { label: "Craftsmanship", icon: "/icons/lotus-flower.png" },
+  { label: "Innovation", icon: "/icons/lotus-flower.png" },
+  { label: "Legacy", icon: "/icons/lotus-flower.png" },
+  { label: "Responsibility", icon: "/icons/lotus-flower.png" },
 ];

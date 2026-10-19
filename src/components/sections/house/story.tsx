@@ -21,41 +21,12 @@ export function Story() {
               house of brands, inspired by our rich heritage and driven by a
               brighter future.
             </p>
-
-            <div className="mt-12 space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold/40">
-                  <span className="h-2 w-2 rounded-full bg-gold" />
-                </div>
-                <div>
-                  <h3 className="font-heading text-lg">OUR VISION</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-charcoal/60">
-                    To create a family of world-class brands that enrich lives
-                    and protect what matters most.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold/40">
-                  <span className="h-2 w-2 rounded-full bg-gold" />
-                </div>
-                <div>
-                  <h3 className="font-heading text-lg">OUR MISSION</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-charcoal/60">
-                    To build with integrity, deliver exceptional quality, and
-                    create long-term value for people, communities and the
-                    planet.
-                  </p>
-                </div>
-              </div>
-            </div>
           </Reveal>
 
           <Reveal delay={0.2}>
-            <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+            <div className="relative aspect-4/5 overflow-hidden rounded-sm">
               <Image
-                src="/images/house/story.jpg"
+                src="/images/house/story1.png"
                 alt="Ancient Indian palace — the heritage behind BHULLEA"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

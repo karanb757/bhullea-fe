@@ -8,11 +8,11 @@ export function VisionMission() {
       <Container>
         <div className="grid gap-12 md:grid-cols-2 lg:gap-20">
           <Reveal>
-            <div className="rounded-sm border border-charcoal/10 p-8">
+            <div>
               <p className="font-display text-xs uppercase tracking-widest text-gold">
                 Vision
               </p>
-              <h3 className="mt-3 font-heading text-2xl">OUR VISION</h3>
+              <h3 className="mt-3 font-heading text-2xl md:text-3xl">OUR VISION</h3>
               <p className="mt-4 leading-relaxed text-charcoal/70">
                 To create a family of world-class brands that enrich lives and
                 protect what matters most.
@@ -21,11 +21,11 @@ export function VisionMission() {
           </Reveal>
 
           <Reveal delay={0.15}>
-            <div className="rounded-sm border border-charcoal/10 p-8">
+            <div>
               <p className="font-display text-xs uppercase tracking-widest text-gold">
                 Mission
               </p>
-              <h3 className="mt-3 font-heading text-2xl">OUR MISSION</h3>
+              <h3 className="mt-3 font-heading text-2xl md:text-3xl">OUR MISSION</h3>
               <p className="mt-4 leading-relaxed text-charcoal/70">
                 To build with integrity, deliver exceptional quality, and create
                 long-term value for people, communities and the planet.
