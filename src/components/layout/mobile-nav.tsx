@@ -12,7 +12,7 @@ export function MobileNav() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger className="text-cream lg:hidden" aria-label="Open menu">
-        <Menu className="h-6 w-6" />
+        <Menu className="h-4 w-4 mb-2" />
       </SheetTrigger>
       <SheetContent side="right" className="border-gold/20 bg-charcoal text-cream">
         <SheetTitle className="sr-only">Menu</SheetTitle>

@@ -4,7 +4,7 @@ import { FirstChapterBanner } from "./first-chapter-banner";
 
 export function NewIndianHouse() {
   return (
-    <section className="bg-cream px-6 py-20 lg:px-10">
+    <section className="bg-cream px-6 py-10 lg:px-10">
       <div className="px-12">
         <Reveal className="text-center">
           <h2 className="font-display text-2xl font-semibold uppercase tracking-[0.15em] md:text-4xl">

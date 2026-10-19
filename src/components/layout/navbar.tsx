@@ -21,10 +21,10 @@ export function Navbar() {
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
           ? "bg-charcoal/80 py-3 shadow-lg backdrop-blur-md"
-          : "bg-linear-to-b from-black/40 to-transparent py-5",
+          : "bg-linear-to-b from-black/40 to-transparent py-3 md:py-5 lg:py-5 xl:py-5",
       )}
     >
-      <div className="flex items-center justify-between px-20">
+      <div className="flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-20">
         <Logo />
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">
