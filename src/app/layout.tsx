@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={cinzel.variable}>
-      <body className="bg-cream font-cinzel text-ink antialiased">
+      <body className="bg-cream font-cinzel text-charcoal antialiased">
         {children}
       </body>
     </html>

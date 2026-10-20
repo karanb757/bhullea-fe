@@ -1,15 +1,39 @@
-import { Droplet, ShieldCheck, Lightbulb, Flower2, Leaf, Star } from "lucide-react";
+import { Droplet, ShieldCheck, Lightbulb, Flower2, Leaf, Sparkles } from "lucide-react";
 import { Reveal } from "@/components/shared/reveal";
 import { Container } from "@/components/shared/container";
 import { Section } from "@/components/shared/section";
 
 const values = [
-  { label: "Integrity", icon: ShieldCheck },
-  { label: "Quality", icon: Star },
-  { label: "Purity", icon: Droplet },
-  { label: "Innovation", icon: Lightbulb },
-  { label: "Legacy", icon: Flower2 },
-  { label: "Responsibility", icon: Leaf },
+  {
+    label: "Purity",
+    icon: Droplet,
+    description: "Water in its most pristine form"
+  },
+  {
+    label: "Integrity",
+    icon: ShieldCheck,
+    description: "Honest, transparent practices"
+  },
+  {
+    label: "Heritage",
+    icon: Flower2,
+    description: "Rooted in timeless tradition"
+  },
+  {
+    label: "Innovation",
+    icon: Lightbulb,
+    description: "Modern excellence standards"
+  },
+  {
+    label: "Responsibility",
+    icon: Leaf,
+    description: "Caring for our planet"
+  },
+  {
+    label: "Excellence",
+    icon: Sparkles,
+    description: "Quality in every detail"
+  },
 ];
 
 export function ValuesStrip() {
@@ -17,21 +41,35 @@ export function ValuesStrip() {
     <Section className="bg-charcoal text-cream">
       <Container>
         <Reveal>
-          <p className="text-center font-display text-xs uppercase tracking-widest text-gold">
-            Our Values
-          </p>
-          <h2 className="mt-3 text-center font-heading text-3xl md:text-4xl">
-            OUR VALUES
-          </h2>
+          <div className="text-center mb-16">
+            <p className="font-display text-xs uppercase tracking-widest text-gold">
+              Core Principles
+            </p>
+            <h2 className="mt-3 text-center font-heading text-4xl md:text-5xl">
+              OUR VALUES
+            </h2>
+            <p className="mt-4 text-center text-cream/60 max-w-2xl mx-auto">
+              Every value guides our commitment to delivering premium water that honors heritage while securing a sustainable future
+            </p>
+          </div>
         </Reveal>
+
         <Reveal delay={0.2}>
-          <div className="mt-12 grid grid-cols-3 gap-6 md:grid-cols-6">
-            {values.map(({ label, icon: Icon }) => (
-              <div key={label} className="flex flex-col items-center gap-3 text-center">
-                <Icon className="h-7 w-7 text-gold" strokeWidth={1.5} />
-                <span className="font-display text-xs uppercase tracking-widest text-cream/70">
-                  {label}
-                </span>
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:gap-8">
+            {values.map(({ label, icon: Icon, description }) => (
+              <div
+                key={label}
+                className="group p-6 rounded-lg border border-cream/10 hover:border-gold/40 transition-all duration-300 hover:bg-gold/5"
+              >
+                <div className="flex flex-col items-center text-center gap-3">
+                  <Icon className="h-8 w-8 text-gold group-hover:scale-110 transition-transform duration-300" strokeWidth={1.5} />
+                  <span className="font-heading text-sm md:text-base uppercase tracking-widest text-cream font-semibold">
+                    {label}
+                  </span>
+                  <p className="text-xs text-cream/50 leading-relaxed">
+                    {description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
